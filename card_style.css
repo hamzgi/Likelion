@@ -7,6 +7,10 @@
   margin: 30px;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+}
+
 .card-small {
   width: 150px;
 }
