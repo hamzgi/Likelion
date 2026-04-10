@@ -1,0 +1,57 @@
+/* 카드 스타일 */
+.card {
+  text-align: left;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin: 30px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-small {
+  width: 150px;
+}
+
+.card-large {
+  width: 800px;
+}
+
+#doggy {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 텍스트 */
+.card-small-name {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: bold;
+}
+.card-large-name {
+  font-size: 30px;
+  font-weight: 700;
+  font-style: bold;
+}
+.track {
+  font-style: italic;
+  color: dodgerblue;
+}
+.group {
+  color: grey;
+}
+.introduce {
+  font-size: 15px;
+}
+
+/* 바탕 스타일 */
+body {
+  background-color: linen;
+  align-items: flex-start;
+}
