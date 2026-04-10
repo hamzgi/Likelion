@@ -1,0 +1,27 @@
+.card1 {
+  text-align: left;
+  align-content: center;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff3e4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#doggy {
+  height: 250px;
+  align-content: center;
+}
+
+.card2 {
+  text-align: left;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #fff3e4;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
