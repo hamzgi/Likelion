@@ -1,63 +1,104 @@
-div {
-  margin-bottom: 40px;
+/* ===== layout ===== */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
-/* 카드 스타일 */
+/* ===== card ===== */
 .card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
   text-align: left;
   padding: 40px;
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  margin: 30px;
+
+  transition: all 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-10px);
 }
 
+/* ===== card size ===== */
 .card-small {
   width: 250px;
+  gap: 10px;
+  padding: 20px;
 }
 
 .card-large {
   width: 800px;
 }
 
+/* ===== image ===== */
 #doggy {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   display: block;
-  margin-bottom: 10px;
+  margin: 0 auto 10px; /* 가운데 정렬 + 아래 간격 */
 }
 
-/* 텍스트 */
+/* ===== text group (핵심) ===== */
+.text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px; /* 텍스트 간격 줄이기 */
+}
+
+.text-group p {
+  margin: 0; /* 기본 margin 제거 (핵심) */
+}
+
+/* ===== text ===== */
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 4px;
+}
+.profile p {
+  margin: 0;
+  line-height: 1.5;
+}
 .card-small-name {
   font-size: 20px;
   font-weight: 700;
 }
+
 .card-large-name {
   font-size: 30px;
   font-weight: 700;
 }
-.essential{
+
+.essential {
   font-weight: 650;
 }
+
 .track {
   font-weight: 700;
   font-style: italic;
   color: dodgerblue;
 }
+
 .group {
   color: grey;
 }
+
 .introduce {
   font-size: 15px;
+  line-height: 1.5;
 }
 
-/* 바탕 스타일 */
+/* ===== body ===== */
 body {
   background-color: linen;
-  align-items: flex-start;
+  padding: 40px;
 }
