@@ -1,3 +1,7 @@
+div {
+  margin-bottom: 40px;
+}
+
 /* 카드 스타일 */
 .card {
   text-align: left;
@@ -13,7 +17,7 @@
 }
 
 .card-small {
-  width: 150px;
+  width: 250px;
 }
 
 .card-large {
@@ -21,8 +25,8 @@
 }
 
 #doggy {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   display: block;
   margin-bottom: 10px;
@@ -32,14 +36,16 @@
 .card-small-name {
   font-size: 20px;
   font-weight: 700;
-  font-style: bold;
 }
 .card-large-name {
   font-size: 30px;
   font-weight: 700;
-  font-style: bold;
+}
+.essential{
+  font-weight: 650;
 }
 .track {
+  font-weight: 700;
   font-style: italic;
   color: dodgerblue;
 }
