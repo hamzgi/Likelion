@@ -12,8 +12,9 @@ ul {
 /* ===== card ===== */
 .card-small.my-card {
   border: 2px solid dodgerblue;
-  width: 700px;
-  height: 700px;
+}
+.highlight {
+  grid-column: span 2;
 }
 .card {
   display: flex;
@@ -114,10 +115,12 @@ body {
 }
 
 /* ===== grid ===== */
+
 .card-small-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  grid-auto-flow: row;
 }
 .card-large-section {
   display: flex;
@@ -126,13 +129,13 @@ body {
   margin-top: 40px;
 }
 @media (max-width: 900px) {
-  .summary-section {
+  .card-small-section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 500px) {
-  .summary-section {
+  .card-small-section {
     grid-template-columns: 1fr;
   }
 }
