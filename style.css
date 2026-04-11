@@ -52,10 +52,20 @@ ul {
   object-fit: cover;
   display: block;
 }
+.card-small > .profile-img,
+.card-small .img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+
+.card-small > .profile-img {
+  height: auto;
+}
 .img-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1; /* 정사각형 */
+  aspect-ratio: 1 / 1; /* 핵심 */
   overflow: hidden;
 }
 .badge {
