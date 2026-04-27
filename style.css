@@ -146,6 +146,115 @@ body {
   padding: 40px;
 }
 
+/* ===== Dashboard Controls ===== */
+.roster-control-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.control-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.roster-control-section button, .form-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.roster-control-section button:hover, .form-actions button:hover {
+  background-color: #1e70bf;
+}
+
+.roster-control-section #btn-delete-last {
+  background-color: #dc3545;
+}
+.roster-control-section #btn-delete-last:hover {
+  background-color: #bb2d3b;
+}
+
+.member-count {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* ===== Form Area ===== */
+.hidden {
+  display: none !important;
+}
+
+.form-section {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.add-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.add-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+/* Make text area span full width or adjust based on grid */
+.form-group:has(#input-long-intro) {
+  grid-column: span 2;
+}
+
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+.form-actions .btn-cancel {
+  background-color: #6c757d;
+}
+.form-actions .btn-cancel:hover {
+  background-color: #5a6268;
+}
+
 /* ===== grid ===== */
 
 .card-small-section {
@@ -163,6 +272,23 @@ body {
 @media (max-width: 900px) {
   .card-small-section {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .roster-control-section {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  .add-form {
+    grid-template-columns: 1fr;
+  }
+  .form-group:has(#input-long-intro) {
+    grid-column: span 1;
+  }
+  .form-actions {
+    grid-column: span 1;
   }
 }
 
